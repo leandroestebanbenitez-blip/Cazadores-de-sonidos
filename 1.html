@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cazadores de sonidos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 15px;
+      border: 3px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Presioná una imagen y sonara el sonido correspondiente 🔊</h1>
+<h2>Imagenes de la primer carilla</h2>
+<P>
+<div class="galeria">
+  <div class="item" onclick="reproducirAudio('LlaveAudio')">
+    <img src="img\Carilla 1\Llave.PNG" alt="Llave">
+    <audio id="LlaveAudio" src="Llave.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('canillaAudio')">
+    <img src="img\Carilla 1\canilla con agua.PNG" alt="canilla">
+    <audio id="LlaveAudio" src="canilla.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('elefanteAudio')">
+    <img src="img\Carilla 1\elefante.png" alt="Elefante">
+    <audio id="LlaveAudio" src="elefante.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('GatoAudio')">
+    <img src="img\Carilla 1\gato.png" alt="Gato">
+    <audio id="GatoAudio" src="cat.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('grilloAudio')">
+    <img src="img\Carilla 1\grillo.png" alt="Grillo">
+    <audio id="grilloAudio" src="grillo.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('campanaAudio')">
+    <img src="img\Carilla 1\campana.png" alt="Campana">
+    <audio id="campanaAudio" src="campana.mp3"></audio>
+
+  </div>
+  <div class="item" onclick="reproducirAudio('leonAudio')">
+    <img src="img\Carilla 1\Leon.PNG" alt="Leon">
+    <audio id="leonAudio" src="leon.mp3"></audio>
+
+  </div>
+  <div class="item" onclick="reproducirAudio('lluviaAudio')">
+    <img src="img\Carilla 1\lluvia.PNG" alt="lluvia">
+  <audio id="lluviaAudio" src="lluvia.mp3"></audio>
+  </div>
+    <div class="item" onclick="reproducirAudio('monoAudio')">
+    <img src="img\Carilla 1\mono.PNG" alt="mono">
+    <audio id="monoAudio" src="mono.mp3"></audio>
+  </div>
+      <div class="item" onclick="reproducirAudio('pajaroAudio')">
+    <img src="img\Carilla 1\pajaro.PNG" alt="pajaro">
+    <audio id="pajaroAudio" src="pajaro.mp3"></audio>
+  </div>
+      <div class="item" onclick="reproducirAudio('perroAudio')">
+    <img src="img\Carilla 1\perro.PNG" alt="perro">
+    <audio id="perroAudio" src="perro.mp3"></audio>
+  </div>
+      <div class="item" onclick="reproducirAudio('ranaAudio')">
+    <img src="img\Carilla 1\rana.PNG" alt="sapo">
+    <audio id="ranaAudio" src="rana.mp3"></audio>
+  </div>
+        <div class="item" onclick="reproducirAudio('vacaAudio')">
+    <img src="img\Carilla 1\vaca.PNG" alt="vaca">
+    <audio id="vacaAudio" src="vaca.mp3"></audio>
+  </div>
+</div>
+  <h2>Imagenes de la segunda carilla</h2>
+<div class="galeria">
+  <div class="item" onclick="reproducirAudio('papasAudio')">
+    <img src="img\Carilla 2\papas.PNG" alt="papas">
+    <audio id="papasAudio" src="papas.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('mateAudio')">
+    <img src="img\Carilla 2\mate.png" alt="mate">
+    <audio id="mateAudio" src="mate.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('marAudio')">
+    <img src="img\Carilla 2\mar.png" alt="mar">
+    <audio id="marAudio" src="mar.mp3"></audio>
+  </div>
+
+
+  <div class="item" onclick="reproducirAudio('maquinaAudio')">
+    <img src="img\Carilla 2\maquina.png" alt="maquina">
+    <audio id="maquinaAudio" src="maquina.mp3"></audio>
+  </div>
+
+
+  <div class="item" onclick="reproducirAudio('aerosolAudio')">
+    <img src="img\Carilla 2\aerosol.png" alt="aerosol">
+    <audio id="aerosolAudio" src="aerosol.mp3"></audio>
+  </div>
+
+
+  <div class="item" onclick="reproducirAudio('caballoAudio')">
+    <img src="img\Carilla 2\caballo.png" alt="caballo">
+    <audio id="caballoAudio" src="caballo.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('ambulanciaAudio')">
+    <img src="img\Carilla 2\ambulancia.png" alt="ambulancia">
+    <audio id="ambulanciaAudio" src="ambulancia.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('timbreAudio')">
+    <img src="img\Carilla 2\timbre.png" alt="timbre">
+    <audio id="timbreAudio" src="timbre.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('inodoroAudio')">
+    <img src="img\Carilla 2\inodoro.png" alt="inodoro">
+    <audio id="inodoroAudio" src="inodoro.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('vientoAudio')">
+    <img src="img\Carilla 2\viento.png" alt="viento">
+    <audio id="vientoAudio" src="viento.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('chicharraAudio')">
+    <img src="img\Carilla 2\chicharra.png" alt="chicharra">
+    <audio id="chicharraAudio" src="chicharra.mp3"></audio>
+  </div>
+
+
+  <div class="item" onclick="reproducirAudio('tecladoAudio')">
+    <img src="img\Carilla 2\teclado.png" alt="teclado">
+    <audio id="tecladoAudio" src="teclado.mp3"></audio>
+  </div>
+
+  <div class="item" onclick="reproducirAudio('vidrioAudio')">
+    <img src="img\Carilla 2\vidrio.png" alt="vidrio">
+    <audio id="vidrioAudio" src="vidrio.mp3"></audio>
+  </div>
+</div>
+<!-- Audios -->
+<audio id="canillaAudio" src="canilla.mp3"></audio>
+<audio id="elefanteAudio" src="elefante.mp3"></audio>
+<audio id="gatoAudio" src="gato.mp3"></audio>
+<audio id="grilloAudio" src="grillo.mp3"></audio>
+<audio id="campanaAudio" src="campana.mp3"></audio>
+
+<script>
+  function reproducirAudio(id) {
+    const audios = document.querySelectorAll("audio");
+
+    audios.forEach(audio => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+
+    const audio = document.getElementById(id);
+    audio.play();
+  }
+</script>
+
+</body>
+</html>
